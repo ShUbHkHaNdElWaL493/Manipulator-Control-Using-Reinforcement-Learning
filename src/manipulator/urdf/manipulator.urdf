@@ -31,6 +31,7 @@
 
   <link name="link_2">
     <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
       <geometry>
         <cylinder length="0.3" radius="0.05"/>
       </geometry>
@@ -42,6 +43,7 @@
 
   <link name="link_3">
     <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
       <geometry>
         <cylinder length="0.3" radius="0.05"/>
       </geometry>
@@ -53,6 +55,7 @@
 
   <link name="link_4">
     <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
       <geometry>
         <cylinder length="0.3" radius="0.05"/>
       </geometry>
@@ -80,7 +83,7 @@
   <joint name="joint_23" type="revolute">
     <parent link="link_2"/>
     <child link="link_3"/>
-    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <limit lower="0" upper="1.571" effort="10" velocity="1.0"/>
   </joint>
@@ -88,7 +91,7 @@
   <joint name="joint_34" type="revolute">
     <parent link="link_3"/>
     <child link="link_4"/>
-    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <limit lower="0" upper="1.571" effort="10" velocity="1.0"/>
   </joint>
