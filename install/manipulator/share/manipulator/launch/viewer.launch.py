@@ -4,7 +4,6 @@
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument
 import os
 
 def generate_launch_description():
@@ -15,7 +14,6 @@ def generate_launch_description():
     rviz_config_path = os.path.join(package_dir, 'rviz', 'manipulator_config.rviz')
 
     return LaunchDescription([
-        DeclareLaunchArgument('urdf_file', default_value=urdf_path),
 
         Node(
             package='robot_state_publisher',
@@ -32,7 +30,7 @@ def generate_launch_description():
         Node(
             package='rviz2',
             executable='rviz2',
-            # arguments=['-d', rviz_config_path],
+            arguments=['-d', rviz_config_path],
             output='screen'
         )
     
