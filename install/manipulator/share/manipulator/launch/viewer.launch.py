@@ -16,6 +16,12 @@ def generate_launch_description():
     return LaunchDescription([
 
         Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'link_0']
+        ),
+
+        Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             arguments=[urdf_path],
