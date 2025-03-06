@@ -13,31 +13,39 @@ def generate_launch_description():
     urdf_path = os.path.join(package_dir, 'urdf', 'manipulator.urdf')
     rviz_config_path = os.path.join(package_dir, 'rviz', 'manipulator_config.rviz')
 
+    static_transform_publisher_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        arguments=[
+            '--x', '0', '--y', '0', '--z', '0',
+            '--qx', '0', '--qy', '0', '--qz', '0', '--qw', '1',
+            '--frame-id', 'map',
+            '--child-frame-id', 'link_0'
+        ]
+    )
+
+    robot_state_publisher_node = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        output='screen',
+        parameters=[{'robot_description': open(urdf_path, 'r').read()}]
+    )
+
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+    )
+
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        arguments=['-d', rviz_config_path],
+        output='screen'
+    )
+
     return LaunchDescription([
-
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            arguments=['0', '0', '0', '0', '0', '0', 'map', 'link_0']
-        ),
-
-        Node(
-            package='robot_state_publisher',
-            executable='robot_state_publisher',
-            arguments=[urdf_path],
-            output='screen'
-        ),
-
-        Node(
-            package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui',
-        ),
-
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            arguments=['-d', rviz_config_path],
-            output='screen'
-        )
-    
+        static_transform_publisher_node,
+        robot_state_publisher_node,
+        joint_state_publisher_node,
+        rviz_node
     ])

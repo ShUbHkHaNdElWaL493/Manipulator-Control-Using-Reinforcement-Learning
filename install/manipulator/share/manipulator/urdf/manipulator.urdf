@@ -8,6 +8,9 @@
 <robot name="manipulator" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <link name="link_0">
+    <!-- <inertial>
+      <>
+    </inertial> -->
     <visual>
       <geometry>
         <cylinder length="0.1" radius="0.2"/>
