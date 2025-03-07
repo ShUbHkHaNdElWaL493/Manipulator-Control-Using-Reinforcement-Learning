@@ -32,8 +32,9 @@ def generate_launch_description():
     )
 
     joint_state_publisher_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
+        package='manipulator',
+        executable='joint_state_publisher',
+        output='screen'
     )
 
     rviz_node = Node(

@@ -1,0 +1,20 @@
+[0.019s] Invoking command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator -- -j8 -l8
+[0.172s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.670s] [31mCMake Error at CMakeLists.txt:16 (install):
+[0.670s]   install TARGETS given target "DIRECTORY" which does not exist.
+[0.670s] 
+[0.671s] [0m
+[0.683s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.897s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.897s] -- Configured cppcheck include dirs: 
+[0.897s] -- Configured cppcheck exclude dirs and/or files: 
+[0.943s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.943s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.944s] -- Added test 'lint_cmake' to check CMake code style
+[0.945s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.947s] -- Added test 'uncrustify' to check C / C++ code style
+[0.947s] -- Configured uncrustify additional arguments: 
+[0.949s] -- Added test 'xmllint' to check XML markup files
+[0.952s] -- Configuring incomplete, errors occurred!
+[0.957s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.959s] Invoked command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator -- -j8 -l8

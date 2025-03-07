@@ -9,7 +9,6 @@
 
   <link name="link_0">
     <!-- <inertial>
-      <>
     </inertial> -->
     <visual>
       <geometry>

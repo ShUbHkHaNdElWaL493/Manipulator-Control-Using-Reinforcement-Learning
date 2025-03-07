@@ -43,10 +43,35 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/manipulator" TYPE EXECUTABLE FILES "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator/joint_state_publisher")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher"
+         OLD_RPATH "/opt/ros/jazzy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/manipulator/joint_state_publisher")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator/CMakeFiles/joint_state_publisher.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator" TYPE DIRECTORY FILES
-    "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/src/manipulator/urdf"
     "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/src/manipulator/launch"
     "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/src/manipulator/rviz"
+    "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/src/manipulator/src"
+    "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/src/manipulator/urdf"
     )
 endif()
 

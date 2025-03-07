@@ -197,6 +197,43 @@ manipulator_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_uninstall.dir/build.make CMakeFiles/manipulator_uninstall.dir/build
 .PHONY : manipulator_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named joint_state_publisher
+
+# Build rule for target.
+joint_state_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joint_state_publisher
+.PHONY : joint_state_publisher
+
+# fast build rule for target.
+joint_state_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/build
+.PHONY : joint_state_publisher/fast
+
+src/joint_state_publisher.o: src/joint_state_publisher.cpp.o
+.PHONY : src/joint_state_publisher.o
+
+# target to build an object file
+src/joint_state_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.o
+.PHONY : src/joint_state_publisher.cpp.o
+
+src/joint_state_publisher.i: src/joint_state_publisher.cpp.i
+.PHONY : src/joint_state_publisher.i
+
+# target to preprocess a source file
+src/joint_state_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.i
+.PHONY : src/joint_state_publisher.cpp.i
+
+src/joint_state_publisher.s: src/joint_state_publisher.cpp.s
+.PHONY : src/joint_state_publisher.s
+
+# target to generate assembly for a file
+src/joint_state_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.s
+.PHONY : src/joint_state_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... manipulator_uninstall"
 	@echo "... uninstall"
+	@echo "... joint_state_publisher"
+	@echo "... src/joint_state_publisher.o"
+	@echo "... src/joint_state_publisher.i"
+	@echo "... src/joint_state_publisher.s"
 .PHONY : help
 
 

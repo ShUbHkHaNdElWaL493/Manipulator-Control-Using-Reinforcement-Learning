@@ -1,0 +1,57 @@
+[0.019s] Invoking command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator -- -j8 -l8
+[0.053s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.332s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.370s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.381s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.421s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.504s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.506s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.587s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.681s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.760s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.887s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.887s] -- Configured cppcheck include dirs: 
+[0.888s] -- Configured cppcheck exclude dirs and/or files: 
+[0.888s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.888s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.889s] -- Added test 'lint_cmake' to check CMake code style
+[0.889s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.891s] -- Added test 'uncrustify' to check C / C++ code style
+[0.891s] -- Configured uncrustify additional arguments: 
+[0.891s] -- Added test 'xmllint' to check XML markup files
+[0.892s] -- Configuring done (0.8s)
+[1.057s] -- Generating done (0.1s)
+[1.063s] -- Build files have been written to: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator
+[1.167s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.o[0m
+[5.942s] [100%] [32m[1mLinking CXX executable joint_state_publisher[0m
+[6.166s] [100%] Built target joint_state_publisher
+[6.184s] Invoked command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator -- -j8 -l8
+[6.197s] Invoking command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator
+[6.208s] -- Install configuration: ""
+[6.208s] -- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_publisher
+[6.210s] -- Set non-toolchain portion of runtime path of "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_publisher" to ""
+[6.210s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch/viewer.launch.py
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/rviz
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/rviz/manipulator_config.rviz
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src
+[6.211s] -- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src/joint_state_publisher.cpp
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/urdf
+[6.211s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/urdf/manipulator.urdf
+[6.212s] -- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[6.237s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[6.237s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[6.237s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[6.237s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/path.sh
+[6.238s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/path.dsv
+[6.238s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.bash
+[6.238s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.sh
+[6.238s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.zsh
+[6.238s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.dsv
+[6.238s] -- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/package.dsv
+[6.239s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[6.239s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[6.239s] -- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[6.239s] -- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/package.xml
+[6.241s] Invoked command in '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator

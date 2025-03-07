@@ -7,12 +7,22 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+add_executable(joint_state_publisher src/joint_state_publisher.cpp)
+ament_target_dependencies(joint_state_publisher rclcpp sensor_msgs)
+
 install(
-  DIRECTORY urdf launch rviz
+  TARGETS joint_state_publisher
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY launch rviz src urdf
   DESTINATION share/${PROJECT_NAME}
 )
 
