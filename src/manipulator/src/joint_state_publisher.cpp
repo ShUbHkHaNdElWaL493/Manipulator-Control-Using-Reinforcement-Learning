@@ -22,7 +22,7 @@ class JointStatePublisher : public rclcpp::Node
             joint_state_publisher = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
             timer = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&JointStatePublisher::publish_joint_states, this));
             joint_state.name = {"joint_01", "joint_23", "joint_45", "joint_67"};
-            joint_state.position = {0.0, 0.0, 0.0, 1.571};
+            joint_state.position = {0.0, 0.0, 0.0, 0.0};
             joint_state.velocity = {0.0, 0.0, 0.0, 0.0};
             joint_state.effort = {0.0, 0.0, 0.0, 0.0};
         }
