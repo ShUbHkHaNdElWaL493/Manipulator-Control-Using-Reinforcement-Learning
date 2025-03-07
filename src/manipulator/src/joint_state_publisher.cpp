@@ -1,3 +1,8 @@
+/*
+    CS22B1090
+    Shubh Khandelwal
+*/
+
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 
