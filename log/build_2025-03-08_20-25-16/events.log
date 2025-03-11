@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000310] (manipulator) JobQueued: {'identifier': 'manipulator', 'dependencies': OrderedDict()}
+[0.000395] (manipulator) JobStarted: {'identifier': 'manipulator'}
+[0.016782] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'cmake'}
+[0.017633] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'build'}
+[0.018667] (manipulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator', '--', '-j8', '-l8'], 'cwd': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'shubh_khandelwal', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/shubh_khandelwal', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2594', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9d97ecbb83f58f7581aedc2d67cbf385', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install:/home/shubh_khandelwal/Documents/ROS/microros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shubh_khandelwal', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'shubh_khandelwal', 'STM32_PRG_PATH': '/home/shubh_khandelwal/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/shubh_khandelwal/.local/bin:/home/shubh_khandelwal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/shubh-khandelwal:@/tmp/.ICE-unix/2594,unix/shubh-khandelwal:/tmp/.ICE-unix/2594', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a2dbd949_7bee_4ce0_aca9_fa35f493553e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HGVQ22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.255', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator:/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9d97ecbb83f58f7581aedc2d67cbf385', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator:/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099110] (-) TimerEvent: {}
+[0.113981] (manipulator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joint_state_node.dir/src/joint_state_node.cpp.o\x1b[0m\n'}
+[0.199245] (-) TimerEvent: {}
+[0.299644] (-) TimerEvent: {}
+[0.400067] (-) TimerEvent: {}
+[0.500404] (-) TimerEvent: {}
+[0.600714] (-) TimerEvent: {}
+[0.701020] (-) TimerEvent: {}
+[0.801351] (-) TimerEvent: {}
+[0.901648] (-) TimerEvent: {}
+[1.001941] (-) TimerEvent: {}
+[1.102260] (-) TimerEvent: {}
+[1.202575] (-) TimerEvent: {}
+[1.302841] (-) TimerEvent: {}
+[1.403142] (-) TimerEvent: {}
+[1.503449] (-) TimerEvent: {}
+[1.603751] (-) TimerEvent: {}
+[1.704204] (-) TimerEvent: {}
+[1.804521] (-) TimerEvent: {}
+[1.904818] (-) TimerEvent: {}
+[2.005134] (-) TimerEvent: {}
+[2.105448] (-) TimerEvent: {}
+[2.205802] (-) TimerEvent: {}
+[2.306232] (-) TimerEvent: {}
+[2.406635] (-) TimerEvent: {}
+[2.507052] (-) TimerEvent: {}
+[2.607403] (-) TimerEvent: {}
+[2.707787] (-) TimerEvent: {}
+[2.808151] (-) TimerEvent: {}
+[2.908541] (-) TimerEvent: {}
+[3.008945] (-) TimerEvent: {}
+[3.109244] (-) TimerEvent: {}
+[3.209552] (-) TimerEvent: {}
+[3.309930] (-) TimerEvent: {}
+[3.410300] (-) TimerEvent: {}
+[3.510605] (-) TimerEvent: {}
+[3.611021] (-) TimerEvent: {}
+[3.711426] (-) TimerEvent: {}
+[3.811856] (-) TimerEvent: {}
+[3.912153] (-) TimerEvent: {}
+[4.012556] (-) TimerEvent: {}
+[4.112856] (-) TimerEvent: {}
+[4.213186] (-) TimerEvent: {}
+[4.313613] (-) TimerEvent: {}
+[4.416483] (-) TimerEvent: {}
+[4.516836] (-) TimerEvent: {}
+[4.617138] (-) TimerEvent: {}
+[4.717448] (-) TimerEvent: {}
+[4.817753] (-) TimerEvent: {}
+[4.918193] (-) TimerEvent: {}
+[5.018552] (-) TimerEvent: {}
+[5.118873] (-) TimerEvent: {}
+[5.219125] (-) TimerEvent: {}
+[5.319444] (-) TimerEvent: {}
+[5.419750] (-) TimerEvent: {}
+[5.520079] (-) TimerEvent: {}
+[5.620419] (-) TimerEvent: {}
+[5.720733] (-) TimerEvent: {}
+[5.821060] (-) TimerEvent: {}
+[5.921367] (-) TimerEvent: {}
+[6.021657] (-) TimerEvent: {}
+[6.121944] (-) TimerEvent: {}
+[6.222306] (-) TimerEvent: {}
+[6.322622] (-) TimerEvent: {}
+[6.422940] (-) TimerEvent: {}
+[6.523280] (-) TimerEvent: {}
+[6.623589] (-) TimerEvent: {}
+[6.723884] (-) TimerEvent: {}
+[6.824199] (-) TimerEvent: {}
+[6.924505] (-) TimerEvent: {}
+[7.024810] (-) TimerEvent: {}
+[7.125145] (-) TimerEvent: {}
+[7.225449] (-) TimerEvent: {}
+[7.325756] (-) TimerEvent: {}
+[7.426104] (-) TimerEvent: {}
+[7.526410] (-) TimerEvent: {}
+[7.626707] (-) TimerEvent: {}
+[7.726972] (-) TimerEvent: {}
+[7.827238] (-) TimerEvent: {}
+[7.927535] (-) TimerEvent: {}
+[8.027841] (-) TimerEvent: {}
+[8.128157] (-) TimerEvent: {}
+[8.228447] (-) TimerEvent: {}
+[8.328732] (-) TimerEvent: {}
+[8.429052] (-) TimerEvent: {}
+[8.529342] (-) TimerEvent: {}
+[8.629669] (-) TimerEvent: {}
+[8.730006] (-) TimerEvent: {}
+[8.830340] (-) TimerEvent: {}
+[8.930640] (-) TimerEvent: {}
+[9.030920] (-) TimerEvent: {}
+[9.131216] (-) TimerEvent: {}
+[9.231551] (-) TimerEvent: {}
+[9.331833] (-) TimerEvent: {}
+[9.432133] (-) TimerEvent: {}
+[9.532469] (-) TimerEvent: {}
+[9.632731] (-) TimerEvent: {}
+[9.733066] (-) TimerEvent: {}
+[9.833416] (-) TimerEvent: {}
+[9.933713] (-) TimerEvent: {}
+[10.034106] (-) TimerEvent: {}
+[10.134463] (-) TimerEvent: {}
+[10.206332] (manipulator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable joint_state_node\x1b[0m\n'}
+[10.234587] (-) TimerEvent: {}
+[10.334978] (-) TimerEvent: {}
+[10.435306] (-) TimerEvent: {}
+[10.535873] (-) TimerEvent: {}
+[10.627267] (manipulator) StdoutLine: {'line': b'[100%] Built target joint_state_node\n'}
+[10.635992] (-) TimerEvent: {}
+[10.647946] (manipulator) CommandEnded: {'returncode': 0}
+[10.648939] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'install'}
+[10.661946] (manipulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator'], 'cwd': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'shubh_khandelwal', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/shubh_khandelwal', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2594', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9d97ecbb83f58f7581aedc2d67cbf385', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install:/home/shubh_khandelwal/Documents/ROS/microros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shubh_khandelwal', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'shubh_khandelwal', 'STM32_PRG_PATH': '/home/shubh_khandelwal/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/shubh_khandelwal/.local/bin:/home/shubh_khandelwal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/shubh-khandelwal:@/tmp/.ICE-unix/2594,unix/shubh-khandelwal:/tmp/.ICE-unix/2594', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a2dbd949_7bee_4ce0_aca9_fa35f493553e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HGVQ22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.255', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator:/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/build/manipulator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9d97ecbb83f58f7581aedc2d67cbf385', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator:/home/shubh_khandelwal/Documents/ROS/microros_ws/install/micro_ros_agent:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.674463] (manipulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.674988] (manipulator) StdoutLine: {'line': b'-- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_node\n'}
+[10.683488] (manipulator) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_node" to ""\n'}
+[10.683985] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch\n'}
+[10.684304] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch/node_launcher.launch.py\n'}
+[10.684878] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/rviz\n'}
+[10.685143] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/rviz/manipulator_config.rviz\n'}
+[10.685623] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src\n'}
+[10.686145] (manipulator) StdoutLine: {'line': b'-- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src/joint_state_node.cpp\n'}
+[10.686339] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/urdf\n'}
+[10.686633] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/urdf/manipulator.urdf\n'}
+[10.686969] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator\n'}
+[10.687227] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator\n'}
+[10.687424] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/ament_prefix_path.sh\n'}
+[10.687588] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv\n'}
+[10.687794] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/path.sh\n'}
+[10.688014] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/environment/path.dsv\n'}
+[10.688160] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.bash\n'}
+[10.688254] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.sh\n'}
+[10.688346] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.zsh\n'}
+[10.688437] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/local_setup.dsv\n'}
+[10.688557] (manipulator) StdoutLine: {'line': b'-- Installing: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/package.dsv\n'}
+[10.688659] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/packages/manipulator\n'}
+[10.688736] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake\n'}
+[10.688813] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake\n'}
+[10.688904] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/package.xml\n'}
+[10.689823] (manipulator) CommandEnded: {'returncode': 0}
+[10.718878] (manipulator) JobEnded: {'identifier': 'manipulator', 'rc': 0}
+[10.720294] (-) EventReactorShutdown: {}

@@ -1,3 +1,6 @@
+# CS22B1090
+# Shubh Khandelwal
+
 cmake_minimum_required(VERSION 3.8)
 project(manipulator)
 
@@ -9,15 +12,16 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-add_executable(joint_state_publisher src/joint_state_publisher.cpp)
-ament_target_dependencies(joint_state_publisher rclcpp sensor_msgs)
+add_executable(joint_state_node src/joint_state_node.cpp)
+ament_target_dependencies(joint_state_node rclcpp sensor_msgs std_msgs)
 
 install(
-  TARGETS joint_state_publisher
+  TARGETS joint_state_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

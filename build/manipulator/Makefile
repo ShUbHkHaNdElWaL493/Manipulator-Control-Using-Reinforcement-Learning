@@ -198,41 +198,41 @@ manipulator_uninstall/fast:
 .PHONY : manipulator_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named joint_state_publisher
+# Target rules for targets named joint_state_node
 
 # Build rule for target.
-joint_state_publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joint_state_publisher
-.PHONY : joint_state_publisher
+joint_state_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joint_state_node
+.PHONY : joint_state_node
 
 # fast build rule for target.
-joint_state_publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/build
-.PHONY : joint_state_publisher/fast
+joint_state_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_node.dir/build.make CMakeFiles/joint_state_node.dir/build
+.PHONY : joint_state_node/fast
 
-src/joint_state_publisher.o: src/joint_state_publisher.cpp.o
-.PHONY : src/joint_state_publisher.o
+src/joint_state_node.o: src/joint_state_node.cpp.o
+.PHONY : src/joint_state_node.o
 
 # target to build an object file
-src/joint_state_publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.o
-.PHONY : src/joint_state_publisher.cpp.o
+src/joint_state_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_node.dir/build.make CMakeFiles/joint_state_node.dir/src/joint_state_node.cpp.o
+.PHONY : src/joint_state_node.cpp.o
 
-src/joint_state_publisher.i: src/joint_state_publisher.cpp.i
-.PHONY : src/joint_state_publisher.i
+src/joint_state_node.i: src/joint_state_node.cpp.i
+.PHONY : src/joint_state_node.i
 
 # target to preprocess a source file
-src/joint_state_publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.i
-.PHONY : src/joint_state_publisher.cpp.i
+src/joint_state_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_node.dir/build.make CMakeFiles/joint_state_node.dir/src/joint_state_node.cpp.i
+.PHONY : src/joint_state_node.cpp.i
 
-src/joint_state_publisher.s: src/joint_state_publisher.cpp.s
-.PHONY : src/joint_state_publisher.s
+src/joint_state_node.s: src/joint_state_node.cpp.s
+.PHONY : src/joint_state_node.s
 
 # target to generate assembly for a file
-src/joint_state_publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_publisher.dir/build.make CMakeFiles/joint_state_publisher.dir/src/joint_state_publisher.cpp.s
-.PHONY : src/joint_state_publisher.cpp.s
+src/joint_state_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_state_node.dir/build.make CMakeFiles/joint_state_node.dir/src/joint_state_node.cpp.s
+.PHONY : src/joint_state_node.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... manipulator_uninstall"
 	@echo "... uninstall"
-	@echo "... joint_state_publisher"
-	@echo "... src/joint_state_publisher.o"
-	@echo "... src/joint_state_publisher.i"
-	@echo "... src/joint_state_publisher.s"
+	@echo "... joint_state_node"
+	@echo "... src/joint_state_node.o"
+	@echo "... src/joint_state_node.i"
+	@echo "... src/joint_state_node.s"
 .PHONY : help
 
 

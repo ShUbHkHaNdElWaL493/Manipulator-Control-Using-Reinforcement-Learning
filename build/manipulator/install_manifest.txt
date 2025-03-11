@@ -1,7 +1,7 @@
-/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_publisher
-/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch/viewer.launch.py
+/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/lib/manipulator/joint_state_node
+/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/launch/node_launcher.launch.py
 /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/rviz/manipulator_config.rviz
-/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src/joint_state_publisher.cpp
+/home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/src/joint_state_node.cpp
 /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/manipulator/urdf/manipulator.urdf
 /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
 /home/shubh_khandelwal/Documents/Projects/Manipulator Control Using Reinforcement Learning/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
